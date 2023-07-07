@@ -1,0 +1,157 @@
+
+@font-face{
+    font-family: star;
+    src: url(regular.ttf);
+
+}
+body{
+    font-family: star;
+    width: 100%;
+    height: 100%;
+    padding: 0%;
+    margin: 0%;
+    background-color:#E0FFFF;
+}
+.fondo{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    z-index: -1;
+    margin: 0px;
+}
+#seleccionar-mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.titulo {
+    color: black;
+    font-size: 44px;
+    
+}
+.subtilulo{
+    
+    color: black;
+    font-size: 32px;
+}
+.tarjetas, .botones-ataques{
+
+    display: flex;
+    gap: 10px;
+
+}
+.tarjetas-mascotas{
+    width: 400px;
+    height: 300px;
+    background-color:transparent;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+}
+.tarjetas-mascotas img{
+    width: 200px;
+}
+#boton-mascota{
+    font-family: star;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-top: 20px;
+
+}
+input{
+    display: none;
+}
+input:checked +label{
+    background-color: aquamarine;
+}
+#seleccionar-ataque{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    
+}
+
+    
+
+.boton-ataque{
+    font-family: star;
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-top: 50px;
+}
+#mensajes{
+    font-family: star;
+    width: 280px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: aquamarine;
+    border: 2px solid black;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.jugador, .enemigo{
+    display:flex ;
+    flex-direction: column;
+    align-items:center ;
+}
+#boton-reiniciar{
+    font-family: star;
+    border: transparent;
+    color: black;
+    background-color: transparent;
+}
+.ataques{
+    display: grid;
+    grid-template-columns: 200px 200px;
+}
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+#ver-mapa button {
+    font-family: star;
+    width: 132px;
+    height: 32px;
+    border-radius: 20px;
+    background: aquamarine;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+    
+
+.nombre-pokimon{
+    margin-bottom: -2px
+}
+
+@media (max-width: 1000px){
+    .tarjetas, .botones-ataques{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    #ver-mapa div {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
